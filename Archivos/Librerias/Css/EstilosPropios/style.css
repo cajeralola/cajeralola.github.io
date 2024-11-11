@@ -1,0 +1,495 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-size: 20px;
+    font-family: "Baloo Bhaina 2";
+    color: black;
+  }
+  
+/* Estilo inicial del navbar */
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Estilo del navbar cuando se hace scroll */
+.navbar.scrolled {
+  background-color: rgb(2, 58, 141); /* Cambia este color al que desees */
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Estilo de los enlaces dentro del navbar */
+.navbar .navbar-nav .nav-link {
+  color: #ffffff; /* Color blanco */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Estilo de los enlaces activos dentro del navbar */
+.navbar .navbar-nav .nav-link.active {
+  /* color: #97dacb;  */
+  color: orange; 
+}
+
+/* Estilo del texto del navbar-brand */
+.navbar .navbar-brand {
+  color: #ffffff; /* Color blanco */
+  font-size: 25px;
+  font-weight: bold;
+}
+  
+.imgCarousel{
+  max-height: 100vh;
+  width: 100%; 
+  object-fit: cover;
+}
+
+.margin-seccion{
+  margin: 40px 0px 5px 0px;
+}
+
+.padding-tituloSeccion{
+  padding: 30px;
+}
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.tituloH4{
+  color: rgb(2, 58, 141);
+  font-weight: 700;
+}
+
+.subtitulos{
+  color: rgb(2, 58, 141);
+}
+.single-well>a {
+  display: block;
+}
+
+.single-well ul li {
+  color: #444;
+  display: block;
+  padding: 5px 0;
+}
+
+.single-well ul li i {
+  color: rgb(2, 58, 141);
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.single-well p {
+  color: #444;
+  font-size: 17px;
+}
+
+/*--------------------------------------------------------------
+# Sección Video Divisor
+--------------------------------------------------------------*/
+/* .video-section {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Ajusta la altura según tus necesidades */
+  /* overflow: hidden;
+}
+
+.video-section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+} */ */
+
+/* .overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribuye los elementos a lo largo del ancho del contenedor */
+  /* padding: 0 20px; Añade padding para dar espacio a los bordes */
+  /* color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+/* }
+
+.counter {
+  margin: 0 20px -20px; 
+  text-align: center;
+  font-size: 2em;
+} */  */
+
+/* .counter i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.counter span {
+  display: block;
+  font-size: 1.5em;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 800;
+} */
+
+/*--------------------------------------------------------------
+# Utilidades / Servicios
+--------------------------------------------------------------*/
+.servicios .icon-box {
+  height: 200px; /* Altura fija */
+  width: 100%; /* Ancho del 100% del contenedor padre */
+  text-align: center; /* Alineación del texto */
+  border: 1px solid #ebebeb; /* Borde */
+  padding: 20px; /* Padding para el contenido interno */
+  transition: all ease-in-out 0.3s; /* Transición para efectos */
+  background: #c7c8cf; /* Color de fondo */
+  display: flex; /* Utiliza flexbox */
+  flex-direction: column; /* Dirección del flex */
+  justify-content: center; /* Centra verticalmente el contenido */
+  box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+}
+
+.servicios .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: rgb(2, 58, 141);
+  border-radius: 4px;
+  border-color: rgb(2, 58, 141);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+/* Asegúrate de que los contenedores se distribuyan correctamente */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-lg-4, .col-md-6 {
+  display: flex;
+  align-items: stretch;
+  padding: 15px; /* Espacio entre columnas */
+}
+
+
+.servicios .icon-box .icon i {
+  color: white;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+.servicios .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: rgb(2, 58, 141);
+  transition: ease-in-out 0.3s;
+}
+
+.servicios .icon-box:hover {
+  background: rgb(2, 58, 141);
+}
+
+.servicios .icon-box:hover .icon {
+  background: #c7c8cf;
+}
+
+.servicios .icon-box:hover .icon i {
+  color: rgb(2, 58, 141);
+}
+
+.servicios .icon-box:hover h4 {
+  color: #c7c8cf;
+}
+
+/*--------------------------------------------------------------
+# Equipo
+--------------------------------------------------------------*/
+.equipo .miembro-equipo {
+  overflow: hidden;
+  background: #fff;
+}
+
+.equipo .miembro-equipo .equipo-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.equipo .miembro-equipo .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.equipo .miembro-equipo .social a {
+  transition: color 0.3s;
+  color: #050505;
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.equipo .miembro-equipo .social a i {
+  line-height: 0;
+}
+
+.equipo .miembro-equipo .social a:hover {
+  color: rgb(241, 62, 7);
+}
+
+.equipo .miembro-equipo .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.equipo .miembro-equipo .equipo-info {
+  padding: 25px 15px 0 15px;
+  text-align: center;
+}
+
+.equipo .miembro-equipo .equipo-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: var(--color-secondary);
+}
+
+.equipo .miembro-equipo .equipo-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #6c757d;
+}
+
+.equipo .miembro-equipo .equipo-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #6c757d;
+}
+
+.equipo .miembro-equipo:hover .social {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Clientes
+--------------------------------------------------------------*/
+/* .clientes {
+  padding-top: 20px;
+}
+
+.clientes .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+}
+
+.clientes .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+} */
+
+/* .clientes .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+} */
+
+/* .clientes .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  background-color: #ddd;
+}
+
+.clientes .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffc451;
+} */
+
+/*--------------------------------------------------------------
+# Contacto Seccion
+--------------------------------------------------------------*/
+#Contacto {
+  position: relative;
+  padding: 60px 0;
+  height: 100vh;
+  overflow: hidden; /* Evita que el pseudo-elemento se desborde */
+}
+
+#Contacto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../Imagenes/fondolyn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* Ajusta la opacidad del fondo */
+  z-index: -1; /* Asegúrate de que esté detrás del contenido */
+}
+
+#Contacto .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#Contacto .contacto-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #f82249;
+}
+
+#Contacto .contacto-info address,
+#Contacto .contacto-info p {
+  margin-bottom: 0;
+  color: #112363;
+}
+
+#Contacto .contacto-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #112363;
+}
+
+#Contacto .contacto-info a {
+  color: #112363;
+}
+
+#Contacto .contacto-info a:hover {
+  color: #f82249;
+}
+
+#Contacto .contacto-direccion,
+#Contacto .contacto-celular,
+#Contacto .contacto-email {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+
+  #Contacto .contacto-direccion,
+  #Contacto .contacto-celular,
+  #Contacto .contacto-email {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #Contacto .contacto-celular {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: rgb(130, 139, 151);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #46423b;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links .instagram:hover {
+  background: linear-gradient(45deg, 
+    rgb(245, 175, 25), /* Amarillo */
+    rgb(233, 29, 99),  /* Rosa */
+    rgb(88, 81, 219),  /* Morado */
+    rgb(131, 58, 180)  /* Azul */
+  );
+}
+
+#footer .social-links .facebook:hover {
+  background: rgb(59, 89, 152);
+}
+#footer .social-links .twitter:hover {
+  background: rgb(29, 161, 242);
+}
+#footer .social-links .google-plus:hover {
+  background: rgb(0, 175, 240);
+}
+#footer .social-links .linkedin:hover {
+  background: rgb(0, 119, 181);
+}
+#footer .social-links .whatsapp:hover {
+  background: rgb(37, 211, 102);
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+#footer .credits {
+  font-size: 13px;
+}
+
+.fondo {
+  position: relative;
+  background: linear-gradient(45deg, 
+    rgb(245, 175, 25), 
+    rgb(233, 29, 99),  
+    rgb(88, 81, 219),  
+    rgb(131, 58, 180)  
+  );
+}
+
+.fondo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4); 
+  z-index: 1;
+}
+
+#about .row, #about h2, #about p, #about video {
+  position: relative;
+  z-index: 2;
+}
